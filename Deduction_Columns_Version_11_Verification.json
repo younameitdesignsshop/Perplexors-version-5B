@@ -1,0 +1,18 @@
+{
+  "version": "11",
+  "baseline": "Version 10 app UI/gameplay",
+  "puzzle_count": 5,
+  "puzzles_per_level": 1,
+  "unique_solution_counts": {
+    "v11-beginner": 1,
+    "v11-easy": 1,
+    "v11-medium": 1,
+    "v11-hard": 1,
+    "v11-expert": 1
+  },
+  "design_standard": "Each level uses a deliberately different logical structure inspired by the variety observed in the user-provided workbook examples; no puzzle text or answer is copied.",
+  "difficulty": "Beginner includes direct footholds; Easy adds arithmetic; Medium emphasizes rank/spec relationships; Hard uses indirect cross-category identity clues; Expert uses a multi-day chain with no direct day assignment.",
+  "answer_key_consistency": "PASS",
+  "duplicate_values_across_categories": "PASS",
+  "app_features": "Version 10 game layout, Apple Pencil marking, progress bar, transitions, themes, hints, solved state and celebration preserved."
+}
