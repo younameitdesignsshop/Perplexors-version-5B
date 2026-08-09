@@ -1,0 +1,19 @@
+{
+  "version": "11b",
+  "unchanged_levels": [
+    "Beginner",
+    "Easy",
+    "Medium"
+  ],
+  "reworked_levels": [
+    "Hard",
+    "Expert"
+  ],
+  "Hard_unique_solution_count": 1,
+  "Expert_unique_solution_count": 1,
+  "Hard_answer_key_match": true,
+  "Expert_answer_key_match": true,
+  "javascript_syntax": "PASS",
+  "zip_integrity": "PASS after packaging",
+  "note": "Hard adds a fourth category and a numerical experience chain. Expert expands to five nights with overlapping chronology, exclusions, and cross-category chains."
+}
