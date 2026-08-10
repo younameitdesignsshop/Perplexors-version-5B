@@ -1,4 +1,4 @@
-const CACHE='deduction-columns-v12a-scrollfix-20260810';
+const CACHE='deduction-columns-v12b-rightscroll-20260810';
 const CORE=['./','index.html','manifest.webmanifest','icon.svg'];
 
 self.addEventListener('install',event=>{
