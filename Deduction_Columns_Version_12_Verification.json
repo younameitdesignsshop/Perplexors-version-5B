@@ -1,0 +1,19 @@
+{
+  "version": "12",
+  "puzzles": {
+    "Beginner": "Kite Festival",
+    "Easy": "Museum Delivery Day",
+    "Medium": "Community Theater Night",
+    "Hard": "Mountain Rescue Training",
+    "Expert": "Deep Sea Expedition (retained puzzle, revised clues)"
+  },
+  "requirements": {
+    "one_puzzle_per_level": true,
+    "expert_retained_with_new_clues": true,
+    "independent_clue_scroll": true,
+    "independent_answer_scroll": true,
+    "no_assumption_design_goal": true
+  },
+  "javascript_syntax": "PASS",
+  "cache_key": "deduction-columns-v12-20260810"
+}

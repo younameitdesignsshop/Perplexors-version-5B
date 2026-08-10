@@ -1,4 +1,4 @@
-const CACHE='deduction-columns-v11b-cachefix-20260809-1843';
+const CACHE='deduction-columns-v12-20260810';
 const CORE=['./','index.html','manifest.webmanifest','icon.svg'];
 
 self.addEventListener('install',event=>{
