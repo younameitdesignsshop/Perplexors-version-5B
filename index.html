@@ -275,8 +275,75 @@ body{background:linear-gradient(145deg,#c8f4ff,#fff1c9 48%,#f9d9ff)!important}
   #game .game-grid>main .notice{margin:5px 2px 0!important}
 }
 
+
+/* VERSION 13a — fit entire deduction board inside iPad landscape */
+@media (min-width: 901px) and (orientation: landscape){
+  .app{max-width:none!important;width:100%!important;padding:4px!important;overflow:hidden!important}
+  .sheet{width:100%!important;max-width:none!important;padding:7px!important;overflow:hidden!important}
+  #game{width:100%!important;max-width:100%!important;overflow:hidden!important}
+  #game .game-grid{
+    width:100%!important;
+    max-width:100%!important;
+    grid-template-columns:minmax(250px,31%) minmax(0,69%)!important;
+    gap:8px!important;
+  }
+  #game .game-grid>aside,
+  #game .game-grid>main{min-width:0!important;max-width:100%!important}
+  #game .game-grid>main{
+    overflow-y:auto!important;
+    overflow-x:hidden!important;
+    padding-left:4px!important;
+    padding-right:4px!important;
+  }
+  #game .game-grid>main .tools{
+    display:flex!important;
+    flex-wrap:nowrap!important;
+    justify-content:flex-start!important;
+    gap:8px!important;
+    padding:6px 8px!important;
+    overflow:visible!important;
+  }
+  #game .game-grid>main .tools>span{margin-right:8px!important;white-space:nowrap!important}
+  #game .game-grid>main .tools .mode{
+    flex:0 0 auto!important;
+    margin:0!important;
+    padding:6px 12px!important;
+    white-space:nowrap!important;
+  }
+  #game .game-grid>main .board{
+    width:100%!important;
+    max-width:100%!important;
+    grid-template-columns:repeat(var(--cols),minmax(0,1fr))!important;
+    gap:2px!important;
+    overflow:visible!important;
+  }
+  #game .game-grid>main .column{
+    min-width:0!important;
+    padding:0 3px!important;
+  }
+  #game .game-grid>main .column h3{font-size:13px!important;overflow:hidden!important;text-overflow:ellipsis!important;white-space:nowrap!important}
+  #game .game-grid>main .cat-title{font-size:9px!important}
+  #game .game-grid>main .choice{font-size:12.5px!important;min-width:0!important;padding:1px!important}
+  #game .game-grid>main .choice span{max-width:100%!important;white-space:nowrap!important}
+  #game .game-grid>main .actions{
+    display:flex!important;
+    flex-wrap:nowrap!important;
+    gap:7px!important;
+    justify-content:space-between!important;
+  }
+  #game .game-grid>main .actions .btn{padding:7px 10px!important;white-space:nowrap!important}
+}
+@media (min-width: 901px) and (max-width: 1150px) and (orientation: landscape){
+  #game .game-grid{grid-template-columns:minmax(235px,30%) minmax(0,70%)!important}
+  #game .game-grid>main .tools{gap:5px!important}
+  #game .game-grid>main .tools>span{margin-right:3px!important;font-size:13px!important}
+  #game .game-grid>main .tools .mode{padding:5px 9px!important;font-size:12.5px!important}
+  #game .game-grid>main .choice{font-size:11.5px!important}
+  #game .game-grid>main .column{padding:0 2px!important}
+}
+
 </style></head><body><div class="app"><div class="sheet">
-<section id="home"><div class="hero"><h1>Deduction Columns</h1><div>Version 13 · Five fresh deduction challenges</div></div><div class="levels" id="levels"></div></section>
+<section id="home"><div class="hero"><h1>Deduction Columns</h1><div>Version 13a · Five fresh deduction challenges</div></div><div class="levels" id="levels"></div></section>
 <section id="game" class="hidden"><div class="game-head"><button id="homeBtn" class="btn">← Home</button><div class="game-title-wrap"><span id="themeBadge" class="theme-badge"></span><small id="levelLabel"></small><h2 id="titleLabel" style="margin:0"></h2></div><select id="puzzleSelect" class="btn"></select></div><div class="progress-panel"><div class="progress-label"><span> puzzle progress</span><strong id="progressPercent">0%</strong></div><div class="progress-track"><div id="progressFill" class="progress-fill"></div></div></div><div class="game-grid"><aside><h3>The Story</h3><p id="storyText" class="story"></p><h3>The Clues</h3><ol id="cluesList" class="clues"></ol></aside><main><div class="tools"><span>Apple Pencil mode:</span><button id="circleMode" class="mode active circle">Circle</button><button id="crossMode" class="mode">Strike Through</button><button id="eraseMode" class="mode">Erase</button></div><div id="board" class="board"></div><div class="actions"><button id="progressBtn" class="btn">Check My Progress</button><button id="checkBtn" class="btn primary">Check Answer</button><button id="hintBtn" class="btn">Hint</button><button id="resetBtn" class="btn">Reset</button></div><div id="notice" class="notice hidden"></div></main></div></section>
 </div></div><div id="introCard" class="hidden"><div class="intro-box"><div id="introIcon" class="intro-icon"></div><div id="introLevel" class="intro-level"></div><div id="introTitle" class="intro-title"></div><div>Use logic. Circle the match. Cross out the impossible.</div><button id="introGo" class="intro-go">Start Puzzle</button></div></div><div id="celebrate" class="hidden"><div id="confettiLayer"></div><div class="win-card"><div class="big">🎉</div><h2>Puzzle Solved!</h2><p id="winText"></p><button id="winContinue">Continue</button></div></div><script>
 const PUZZLES=[{"id":"v13-beginner","level":"Beginner","title":"Pet Parade","story":"Four children\u2014Ava, Ben, Cora, and Drew\u2014arrived at a pet parade in four different positions. Each brought a different pet and wore a different ribbon color. Arrival order ran from 1st through 4th.","slots":["Ava","Ben","Cora","Drew"],"categories":["Arrival","Pet","Ribbon"],"values":{"Arrival":["1st","2nd","3rd","4th"],"Pet":["Cat","Dog","Rabbit","Turtle"],"Ribbon":["Blue","Gold","Green","Red"]},"clues":["Ben arrived first.","The Rabbit arrived immediately after Ben.","Cora wore the Gold ribbon, and the Dog wore Gold.","Cora arrived before Drew, not necessarily immediately before.","Ava wore the Red ribbon.","The Blue ribbon arrived before the Gold ribbon, not necessarily immediately before.","Drew brought neither the Cat nor the Dog."],"solution":{"Ava":{"Arrival":"2nd","Pet":"Rabbit","Ribbon":"Red"},"Ben":{"Arrival":"1st","Pet":"Cat","Ribbon":"Blue"},"Cora":{"Arrival":"3rd","Pet":"Dog","Ribbon":"Gold"},"Drew":{"Arrival":"4th","Pet":"Turtle","Ribbon":"Green"}},"hint":"Start with Ben and the Rabbit. Then use Cora\u2019s Gold ribbon together with the Dog clue before finishing the remaining pet and ribbon."},{"id":"v13-easy","level":"Easy","title":"County Pie Contest","story":"Four bakers\u2014Jada, Leo, Mina, and Owen\u2014entered four different pies. Each pie had a different weight: 2, 3, 4, or 5 pounds. The bakers also finished in different places, from 1st through 4th.","slots":["Jada","Leo","Mina","Owen"],"categories":["Place","Pie","Weight"],"values":{"Place":["1st","2nd","3rd","4th"],"Pie":["Apple","Cherry","Peach","Pecan"],"Weight":["2 lb","3 lb","4 lb","5 lb"]},"clues":["Jada finished ahead of Leo, who finished ahead of Mina; neither relationship was necessarily immediate.","Owen finished fourth.","The Cherry pie finished immediately after the Peach pie.","Owen baked neither the Apple nor the Pecan pie, and Mina did not bake Cherry.","The Apple pie was the heaviest.","Mina\u2019s pie weighed exactly 1 pound more than Leo\u2019s.","Owen\u2019s pie weighed exactly 1 pound more than Mina\u2019s."],"solution":{"Jada":{"Place":"1st","Pie":"Apple","Weight":"5 lb"},"Leo":{"Place":"2nd","Pie":"Pecan","Weight":"2 lb"},"Mina":{"Place":"3rd","Pie":"Peach","Weight":"3 lb"},"Owen":{"Place":"4th","Pie":"Cherry","Weight":"4 lb"}},"hint":"Use the finish-order chain first. Once Mina and Owen are identified as Peach/Cherry, the consecutive weight clues settle the remaining weights."},{"id":"v13-medium","level":"Medium","title":"Book Club Rotation","story":"Five readers\u2014Aisha, Caleb, Fern, Jonah, and Priya\u2014hosted five consecutive book-club meetings. Each chose a different genre and served a different snack. Meetings are numbered 1st through 5th.","slots":["Aisha","Caleb","Fern","Jonah","Priya"],"categories":["Meeting","Genre","Snack"],"values":{"Meeting":["1st","2nd","3rd","4th","5th"],"Genre":["Fantasy","History","Mystery","Poetry","Science"],"Snack":["Cookies","Fruit","Nuts","Popcorn","Pretzels"]},"clues":["Fern hosted the third meeting.","The Poetry reader met immediately after Caleb, and Jonah met immediately after the Poetry reader.","Priya hosted later than Jonah.","The Science reader brought Nuts and met immediately after the Poetry reader.","Priya read neither Science nor Mystery.","The History reader met before the Mystery reader, not necessarily immediately before.","The Mystery reader met immediately after the person who served Fruit.","Caleb brought neither Nuts nor Popcorn.","Popcorn was served later than Nuts, not necessarily immediately later.","Pretzels were served immediately before Nuts."],"solution":{"Aisha":{"Meeting":"1st","Genre":"History","Snack":"Fruit"},"Caleb":{"Meeting":"2nd","Genre":"Mystery","Snack":"Cookies"},"Fern":{"Meeting":"3rd","Genre":"Poetry","Snack":"Pretzels"},"Jonah":{"Meeting":"4th","Genre":"Science","Snack":"Nuts"},"Priya":{"Meeting":"5th","Genre":"Fantasy","Snack":"Popcorn"}},"hint":"Use Fern\u2019s fixed meeting with the Caleb \u2192 Poetry \u2192 Jonah chain. Once the order is settled, the genre and snack relationships begin to cascade."},{"id":"v13-hard","level":"Hard","title":"Charity Auction","story":"Five bidders\u2014Anika, Bruno, Celeste, Dorian, and Mae\u2014won five different items at a charity auction. The items sold in positions 1st through 5th. Each winning bid was different\u2014$120, $140, $160, $180, or $200\u2014and each bidder used a different paddle symbol.","slots":["Anika","Bruno","Celeste","Dorian","Mae"],"categories":["Order","Item","Bid","Paddle"],"values":{"Order":["1st","2nd","3rd","4th","5th"],"Item":["Clock","Painting","Rug","Sculpture","Watch"],"Bid":["$120","$140","$160","$180","$200"],"Paddle":["Circle","Diamond","Square","Star","Triangle"]},"clues":["Mae\u2019s item sold immediately after Bruno\u2019s, and Anika\u2019s sold immediately after Mae\u2019s.","Dorian\u2019s item sold immediately after Celeste\u2019s, and Bruno\u2019s item sold before Celeste\u2019s.","The Rug sold immediately before the Watch, which sold immediately before the Painting.","The Clock sold after the Painting but before the Sculpture.","The Rug buyer bid $20 less than the Watch buyer, who bid $20 less than the Painting buyer.","The Clock buyer bid $20 less than the Sculpture buyer, and the Painting bid was lower than the Clock bid.","The Painting buyer used the Circle paddle; the Diamond paddle\u2019s bid was exactly $20 more than the Circle paddle\u2019s.","The lowest bidder used the Triangle paddle, and the Watch buyer used the Star paddle."],"solution":{"Anika":{"Order":"3rd","Item":"Painting","Bid":"$160","Paddle":"Circle"},"Bruno":{"Order":"1st","Item":"Rug","Bid":"$120","Paddle":"Triangle"},"Celeste":{"Order":"4th","Item":"Clock","Bid":"$180","Paddle":"Diamond"},"Dorian":{"Order":"5th","Item":"Sculpture","Bid":"$200","Paddle":"Square"},"Mae":{"Order":"2nd","Item":"Watch","Bid":"$140","Paddle":"Star"}},"hint":"Treat the people, item order, and bid amounts as three separate chains first. They line up only after you combine the two three-step relationships with the Clock/Sculpture clues."},{"id":"v13-expert","level":"Expert","title":"Deep Sea Expedition","story":"Five divers\u2014Elena, Marcus, Nadia, Owen, and Priya\u2014made five dives in order. Each explored a different zone, found a different object, reached a different maximum depth, and wore a different suit color. Dive 1 was earliest and Dive 5 latest. Depths were 40, 50, 60, 70, and 80 feet.","slots":["Elena","Marcus","Nadia","Owen","Priya"],"categories":["Dive Order","Zone","Discovery","Depth","Suit"],"values":{"Dive Order":["1","2","3","4","5"],"Zone":["Cave","Kelp","Reef","Trench","Wreck"],"Discovery":["Bell","Camera","Coin","Compass","Tablet"],"Depth":["40 ft","50 ft","60 ft","70 ft","80 ft"],"Suit":["Amber","Blue","Green","Silver","Violet"]},"clues":["Priya dove immediately after Marcus, and Nadia immediately after Priya.","Owen dove immediately after Elena; Marcus dove earlier than Elena.","The Trench dive happened immediately after the Cave dive. The Trench diver found the Camera, while the Cave diver found the Bell.","The Camera was found on the dive immediately before Elena\u2019s.","The Reef dive happened before the Cave dive and produced the Compass.","The Wreck dive happened immediately after the Kelp dive.","The Compass finder went exactly 10 feet shallower than the Cave diver, and the Camera finder went exactly 10 feet deeper than the Cave diver.","The Wreck diver went exactly 10 feet deeper than the Kelp diver and also deeper than the Camera finder.","The Tablet was found on the deepest dive.","The Compass finder wore Blue, the Bell finder wore Silver, and the Camera finder wore Green.","The deepest diver wore Amber."],"solution":{"Elena":{"Dive Order":"4","Zone":"Kelp","Discovery":"Coin","Depth":"70 ft","Suit":"Violet"},"Marcus":{"Dive Order":"1","Zone":"Reef","Discovery":"Compass","Depth":"40 ft","Suit":"Blue"},"Nadia":{"Dive Order":"3","Zone":"Trench","Discovery":"Camera","Depth":"60 ft","Suit":"Green"},"Owen":{"Dive Order":"5","Zone":"Wreck","Discovery":"Tablet","Depth":"80 ft","Suit":"Amber"},"Priya":{"Dive Order":"2","Zone":"Cave","Discovery":"Bell","Depth":"50 ft","Suit":"Silver"}},"hint":"First solve the two dive-order blocks. Then use Camera \u2192 Elena with the Cave/Trench pair. Save the depth partition and suit colors until the zone/discovery chain is established."}];const LEVELS=['Beginner','Easy','Medium','Hard','Expert'];let current=null,markMode='circle';
