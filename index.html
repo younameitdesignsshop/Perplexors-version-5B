@@ -99,6 +99,80 @@ body{background:linear-gradient(145deg,#c8f4ff,#fff1c9 48%,#f9d9ff)!important}
   #game .game-grid>main .board{flex:1 1 auto;min-height:0;overflow-y:auto;-webkit-overflow-scrolling:touch}
   #game .game-grid>main .actions,#game .game-grid>main .notice{flex:0 0 auto}
 }
+
+/* VERSION 12a — split-scroll iPad fix */
+@media (min-width: 800px) and (orientation: landscape) {
+  html, body {
+    height: 100%;
+    min-height: 100%;
+  }
+
+  #game.screen {
+    min-height: 100vh;
+    overflow: visible !important;
+  }
+
+  .v12-split,
+  .puzzle-split,
+  .game-split,
+  .split-layout {
+    align-items: stretch !important;
+    min-height: 0 !important;
+  }
+
+  .v12-clue-panel,
+  .clue-panel,
+  .story-clues-panel,
+  .left-panel {
+    max-height: 72vh !important;
+    height: 72vh !important;
+    min-height: 540px !important;
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+    -webkit-overflow-scrolling: touch !important;
+    overscroll-behavior: contain !important;
+    touch-action: pan-y !important;
+    padding-bottom: 32px !important;
+  }
+
+  .v12-board-panel,
+  .answer-panel,
+  .board-panel,
+  .right-panel {
+    max-height: 72vh !important;
+    height: 72vh !important;
+    min-height: 540px !important;
+    overflow-y: auto !important;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+    overscroll-behavior: contain !important;
+    touch-action: pan-x pan-y !important;
+    padding-bottom: 48px !important;
+  }
+
+  .v12-board-panel .board,
+  .answer-panel .board,
+  .board-panel .board,
+  .right-panel .board,
+  .v12-board-panel .grid,
+  .answer-panel .grid,
+  .board-panel .grid,
+  .right-panel .grid {
+    overflow: visible !important;
+    min-height: max-content !important;
+  }
+}
+
+/* Slightly taller clue area on portrait/tablet too */
+@media (min-width: 700px) and (max-width: 1199px) {
+  .v12-clue-panel,
+  .clue-panel,
+  .story-clues-panel,
+  .left-panel {
+    max-height: 68vh !important;
+  }
+}
+
 </style></head><body><div class="app"><div class="sheet">
 <section id="home"><div class="hero"><h1>Deduction Columns</h1><div>Version 11b Final · Five different styles of logic adventure</div></div><div class="levels" id="levels"></div></section>
 <section id="game" class="hidden"><div class="game-head"><button id="homeBtn" class="btn">← Home</button><div class="game-title-wrap"><span id="themeBadge" class="theme-badge"></span><small id="levelLabel"></small><h2 id="titleLabel" style="margin:0"></h2></div><select id="puzzleSelect" class="btn"></select></div><div class="progress-panel"><div class="progress-label"><span> puzzle progress</span><strong id="progressPercent">0%</strong></div><div class="progress-track"><div id="progressFill" class="progress-fill"></div></div></div><div class="game-grid"><aside><h3>The Story</h3><p id="storyText" class="story"></p><h3>The Clues</h3><ol id="cluesList" class="clues"></ol></aside><main><div class="tools"><span>Apple Pencil mode:</span><button id="circleMode" class="mode active circle">Circle</button><button id="crossMode" class="mode">Strike Through</button><button id="eraseMode" class="mode">Erase</button></div><div id="board" class="board"></div><div class="actions"><button id="progressBtn" class="btn">Check My Progress</button><button id="checkBtn" class="btn primary">Check Answer</button><button id="hintBtn" class="btn">Hint</button><button id="resetBtn" class="btn">Reset</button></div><div id="notice" class="notice hidden"></div></main></div></section>
