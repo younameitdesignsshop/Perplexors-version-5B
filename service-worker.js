@@ -1,4 +1,4 @@
-const CACHE='deduction-columns-v13a-layoutfit-20260810';
+const CACHE='deduction-columns-v14-20260812';
 const CORE=['./','index.html','manifest.webmanifest','icon.svg'];
 
 self.addEventListener('install',event=>{
