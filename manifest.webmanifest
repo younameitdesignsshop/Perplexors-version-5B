@@ -1,10 +1,10 @@
 {
-  "name": "Deduction Columns Version 15 Test",
-  "short_name": "Deduction Columns",
-  "start_url": "./",
+  "name": "Deduction Columns Version 7",
+  "short_name": "Deduction",
+  "start_url": "./?build=11b-cachefix-20260809-1843",
   "display": "standalone",
-  "background_color": "#f7f3e8",
-  "theme_color": "#263238",
+  "background_color": "#f5efe2",
+  "theme_color": "#5b4636",
   "icons": [
     {
       "src": "icon.svg",
