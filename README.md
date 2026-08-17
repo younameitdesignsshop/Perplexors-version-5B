@@ -1,7 +1,11 @@
-Deduction Columns — Version 15B Validated Test
+Deduction Columns — Version 16
 
-Five original test puzzles, one per difficulty.
+25 original puzzles: 5 each at Beginner, Easy, Medium, Hard, and Expert.
 
-Validation change: every puzzle in this build was enumerated against its full clue constraint set and confirmed to have exactly ONE complete solution before packaging.
+Design goals:
+- varied puzzle architectures within every level
+- exactly one complete solution per puzzle
+- harder levels emphasize relational and chained deductions
+- Expert includes ordered/schedule-style puzzles and one larger 7-category feature challenge
 
-This remains a five-puzzle architecture test before expanding to 25 puzzles.
+Every puzzle was computationally checked against its complete clue set and returned exactly one valid solution.
