@@ -1,4 +1,4 @@
-const CACHE='deduction-columns-v16-20260816';
+const CACHE='deduction-columns-hard-expert-prototype-20260817b';
 const CORE=['./','index.html','manifest.webmanifest','icon.svg'];
 
 self.addEventListener('install',event=>{

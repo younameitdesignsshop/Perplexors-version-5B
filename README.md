@@ -1,11 +1,10 @@
-Deduction Columns — Version 16
+Deduction Columns — Hard + Expert Prototype
 
-25 original puzzles: 5 each at Beginner, Easy, Medium, Hard, and Expert.
+This is intentionally a two-puzzle prototype, not a full release.
 
-Design goals:
-- varied puzzle architectures within every level
-- exactly one complete solution per puzzle
-- harder levels emphasize relational and chained deductions
-- Expert includes ordered/schedule-style puzzles and one larger 7-category feature challenge
+Hard: Craft Fair Challenge
+Expert: Antique Auction
 
-Every puzzle was computationally checked against its complete clue set and returned exactly one valid solution.
+Both puzzles were independently enumerated from their displayed clue constraints and
+each has exactly one complete solution. The purpose is to test whether the human
+deduction experience now matches the desired Hard/Expert difficulty before scaling up.

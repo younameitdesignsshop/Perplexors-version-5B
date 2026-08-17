@@ -1,29 +1,21 @@
-Version 16 validation report
+Hard + Expert Prototype validation
+Built: 2026-08-17
 
-Level | Puzzle | Solutions | Clues | Direct clues | Relational clues
----|---|---:|---:|---:|---:
-Beginner | Garden Baskets | 1 | 9 | 3 | 6
-Beginner | Magic Pets | 1 | 8 | 4 | 4
-Beginner | Ice Cream Line | 1 | 9 | 3 | 6
-Beginner | Library Bags | 1 | 7 | 3 | 4
-Beginner | Mini Golf | 1 | 9 | 3 | 6
-Easy | Pet Parade | 1 | 12 | 3 | 8
-Easy | Cupcake Counter | 1 | 9 | 2 | 6
-Easy | School Clubs | 1 | 9 | 3 | 5
-Easy | Beach Rentals | 1 | 12 | 2 | 9
-Easy | Farm Animals | 1 | 12 | 3 | 8
-Medium | Talent Finals | 1 | 12 | 1 | 11
-Medium | Book Fair | 1 | 12 | 3 | 8
-Medium | Science Expo | 1 | 16 | 3 | 12
-Medium | Dinner Reservations | 1 | 12 | 1 | 11
-Medium | Bike Race | 1 | 12 | 1 | 11
-Hard | Lake Cabins | 1 | 16 | 3 | 12
-Hard | Mayor Debate | 1 | 16 | 1 | 15
-Hard | Mountain Rescue | 1 | 16 | 1 | 15
-Hard | Restaurant Week | 1 | 16 | 3 | 12
-Hard | Museum Delivery | 1 | 16 | 2 | 14
-Expert | Witching Hour | 1 | 20 | 1 | 19
-Expert | Car Buying Fever II | 1 | 20 | 1 | 19
-Expert | Heartbreak Harbor | 1 | 20 | 1 | 19
-Expert | Bus Business II | 1 | 20 | 1 | 19
-Expert | The Grand Election | 1 | 28 | 1 | 27
+HARD — Craft Fair Challenge
+Displayed clues: 17
+Complete solutions satisfying every displayed clue: 1
+Direct person=answer clues: 0
+Mechanisms: extrema, ratios, exact differences, craft↔sales, booth adjacency/order,
+ribbon adjacency/order, person comparisons, and ribbon↔craft intersection.
+
+EXPERT — Antique Auction
+Displayed clues: 19
+Complete solutions satisfying every displayed clue: 1
+Direct person=answer clues: 0
+Mechanisms: chained bid differences, age comparisons, age↔lot, age↔paddle,
+paddle↔price, bidder exclusions, lot arithmetic, bidder ordering, and item↔age.
+The puzzle is not primarily a before/after sequence.
+
+VALIDATION METHOD
+The checks exhaustively enumerate assignments from the exact displayed clue constraints.
+They do not merely compare clues with the stored answer key.
