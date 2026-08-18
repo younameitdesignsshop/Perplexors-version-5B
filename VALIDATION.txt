@@ -1,21 +1,16 @@
-Hard + Expert Prototype validation
-Built: 2026-08-17
+Prototype 2 validation — 2026-08-17
 
-HARD — Craft Fair Challenge
-Displayed clues: 17
-Complete solutions satisfying every displayed clue: 1
-Direct person=answer clues: 0
-Mechanisms: extrema, ratios, exact differences, craft↔sales, booth adjacency/order,
-ribbon adjacency/order, person comparisons, and ribbon↔craft intersection.
+Hard — Community Center Week
+Architecture: fixed-week schedule / day-offset chains / same-day cross-links
+Displayed clues: 14
+Complete solutions satisfying exact displayed clues: 1
 
-EXPERT — Antique Auction
-Displayed clues: 19
-Complete solutions satisfying every displayed clue: 1
-Direct person=answer clues: 0
-Mechanisms: chained bid differences, age comparisons, age↔lot, age↔paddle,
-paddle↔price, bidder exclusions, lot arithmetic, bidder ordering, and item↔age.
-The puzzle is not primarily a before/after sequence.
+Expert — Inventors' Showcase
+Architecture: word-length properties / score arithmetic / badge-score chain / city-invention links / person constraints
+Displayed clues: 22
+Complete solutions satisfying exact displayed clues: 1
 
-VALIDATION METHOD
-The checks exhaustively enumerate assignments from the exact displayed clue constraints.
-They do not merely compare clues with the stored answer key.
+These are intentionally different solving architectures from Craft Fair Challenge and Antique Auction.
+Both were exhaustively checked from the displayed clue constraints, not merely against the stored answer key.
+
+Scratch Notes: freehand Apple Pencil/finger canvas, pen, eraser, clear, and per-puzzle local persistence.

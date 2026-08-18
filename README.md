@@ -1,10 +1,7 @@
-Deduction Columns — Hard + Expert Prototype
+Deduction Columns — Hard + Expert Prototype 2
 
-This is intentionally a two-puzzle prototype, not a full release.
+Hard: Community Center Week — schedule architecture.
+Expert: Inventors' Showcase — word-property + arithmetic architecture.
 
-Hard: Craft Fair Challenge
-Expert: Antique Auction
-
-Both puzzles were independently enumerated from their displayed clue constraints and
-each has exactly one complete solution. The purpose is to test whether the human
-deduction experience now matches the desired Hard/Expert difficulty before scaling up.
+Includes freehand Scratch Notes for Apple Pencil/finger input.
+Both puzzles have exactly one solution by exhaustive constraint validation.
