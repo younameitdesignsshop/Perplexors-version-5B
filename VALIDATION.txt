@@ -1,44 +1,30 @@
-VERSION 17 BUILD / VALIDATION NOTES
-Built: 2026-08-17
+Version 18 build QA
 
-TOTAL PUZZLES: 25
-Beginner: 5
-Easy: 5
-Medium: 5
-Hard: 5
-Expert: 5
+Counts:
+Beginner 5
+Easy 5
+Medium 5
+Hard 5
+Expert 5
 
-LOWER 15
-The 5 Beginner, 5 Easy, and 5 Medium puzzles are carried forward from the
-Version 16 set whose packaged solver report recorded one solution per puzzle.
+Hard:
+Craft Fair Challenge — retained benchmark
+Festival Week — retained benchmark/minimum Hard floor
+Bake-Off Numbers — strengthened
+Dinner Theater — strengthened
+Charity Grants — moved from Expert to Hard based on play-test feedback
 
-HARD — NEW SET
-1. Craft Fair Challenge — retained benchmark from prototype testing.
-   Architecture: interacting sales/craft network + booth/ribbon network.
-2. Festival Week — fixed-week schedule with cross-column day relationships.
-3. Bake-Off Numbers — temperature differences + dessert/ingredient/prize links.
-4. Dinner Theater — seat/adjacency sequence + meal/drink/dessert cross-links.
-5. Radio Finals — word-length properties + score arithmetic + performance/badge links.
+Expert:
+Antique Auction — retained benchmark
+Inventors' Showcase — retained benchmark
+Forensics Lab — new
+Observatory Night — new
+City Innovation Finals — new large feature puzzle
 
-EXPERT — NEW SET
-1. Antique Auction — retained benchmark from prototype testing.
-2. Inventors' Showcase — retained benchmark, with the Boston word-length clue
-   rewritten to remove the self-referential Drone wording.
-3. Charity Grants — two numeric networks (money + volunteers) joined by organizations,
-   venues, and sponsors.
-4. Apartment Tower — floor distance + rent differences + pet/job/door relationships.
-5. The Grand Election — large seven-category feature puzzle with money arithmetic,
-   jobs/parties, surname lengths, newspapers, and endorsement words.
+Build QA performed:
+- 25 puzzles present, exactly 5 per level
+- every stored solution uses every category exactly once
+- every stored solution value exists in its displayed choice list
+- Version 17 keyboard + optional drawing Notes feature preserved
 
-UPPER-LEVEL UNIQUENESS
-The benchmark prototypes were previously exhaustively enumerated from their displayed
-clue constraints. The newly designed Hard/Expert puzzle constraints were also built
-against single intended solutions before packaging. Human difficulty calibration still
-depends on play-testing; uniqueness is not treated as a substitute for difficulty.
-
-NOTES FEATURE
-- Keyboard/typed notes are the default.
-- Typed notes save automatically per puzzle.
-- Optional Apple Pencil/finger drawing tab.
-- Drawing area disables page text selection/touch callout while drawing.
-- Pen, eraser, clear drawing, and clear-all controls.
+Human play-testing remains the difficulty check; uniqueness alone is not treated as difficulty.

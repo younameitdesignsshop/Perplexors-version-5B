@@ -1,14 +1,10 @@
-Deduction Columns — Version 17
+Deduction Columns — Version 18
 
 25 puzzles total: 5 Beginner, 5 Easy, 5 Medium, 5 Hard, 5 Expert.
 
-Version 17 replaces the Version 16 Hard/Expert sets with more varied puzzle
-architectures based on the successful prototype testing.
-
-Notes / Scratch Pad now supports:
-- keyboard typing (default)
-- optional Apple Pencil/finger drawing
-- per-puzzle persistence
-- clear controls
-
-See VALIDATION.txt for the build notes.
+Upper-level calibration:
+- Hard is anchored to Craft Fair Challenge / Festival Week.
+- Expert is anchored to Antique Auction / Inventors' Showcase.
+- Charity Grants was moved to Hard based on play-testing.
+- Apartment Tower and Grand Election were removed from Expert.
+- Keyboard notes remain the default, with optional Apple Pencil drawing.
