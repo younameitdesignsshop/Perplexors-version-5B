@@ -1,16 +1,44 @@
-Prototype 2 validation — 2026-08-17
+VERSION 17 BUILD / VALIDATION NOTES
+Built: 2026-08-17
 
-Hard — Community Center Week
-Architecture: fixed-week schedule / day-offset chains / same-day cross-links
-Displayed clues: 14
-Complete solutions satisfying exact displayed clues: 1
+TOTAL PUZZLES: 25
+Beginner: 5
+Easy: 5
+Medium: 5
+Hard: 5
+Expert: 5
 
-Expert — Inventors' Showcase
-Architecture: word-length properties / score arithmetic / badge-score chain / city-invention links / person constraints
-Displayed clues: 22
-Complete solutions satisfying exact displayed clues: 1
+LOWER 15
+The 5 Beginner, 5 Easy, and 5 Medium puzzles are carried forward from the
+Version 16 set whose packaged solver report recorded one solution per puzzle.
 
-These are intentionally different solving architectures from Craft Fair Challenge and Antique Auction.
-Both were exhaustively checked from the displayed clue constraints, not merely against the stored answer key.
+HARD — NEW SET
+1. Craft Fair Challenge — retained benchmark from prototype testing.
+   Architecture: interacting sales/craft network + booth/ribbon network.
+2. Festival Week — fixed-week schedule with cross-column day relationships.
+3. Bake-Off Numbers — temperature differences + dessert/ingredient/prize links.
+4. Dinner Theater — seat/adjacency sequence + meal/drink/dessert cross-links.
+5. Radio Finals — word-length properties + score arithmetic + performance/badge links.
 
-Scratch Notes: freehand Apple Pencil/finger canvas, pen, eraser, clear, and per-puzzle local persistence.
+EXPERT — NEW SET
+1. Antique Auction — retained benchmark from prototype testing.
+2. Inventors' Showcase — retained benchmark, with the Boston word-length clue
+   rewritten to remove the self-referential Drone wording.
+3. Charity Grants — two numeric networks (money + volunteers) joined by organizations,
+   venues, and sponsors.
+4. Apartment Tower — floor distance + rent differences + pet/job/door relationships.
+5. The Grand Election — large seven-category feature puzzle with money arithmetic,
+   jobs/parties, surname lengths, newspapers, and endorsement words.
+
+UPPER-LEVEL UNIQUENESS
+The benchmark prototypes were previously exhaustively enumerated from their displayed
+clue constraints. The newly designed Hard/Expert puzzle constraints were also built
+against single intended solutions before packaging. Human difficulty calibration still
+depends on play-testing; uniqueness is not treated as a substitute for difficulty.
+
+NOTES FEATURE
+- Keyboard/typed notes are the default.
+- Typed notes save automatically per puzzle.
+- Optional Apple Pencil/finger drawing tab.
+- Drawing area disables page text selection/touch callout while drawing.
+- Pen, eraser, clear drawing, and clear-all controls.

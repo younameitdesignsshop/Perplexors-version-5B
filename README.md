@@ -1,7 +1,14 @@
-Deduction Columns — Hard + Expert Prototype 2
+Deduction Columns — Version 17
 
-Hard: Community Center Week — schedule architecture.
-Expert: Inventors' Showcase — word-property + arithmetic architecture.
+25 puzzles total: 5 Beginner, 5 Easy, 5 Medium, 5 Hard, 5 Expert.
 
-Includes freehand Scratch Notes for Apple Pencil/finger input.
-Both puzzles have exactly one solution by exhaustive constraint validation.
+Version 17 replaces the Version 16 Hard/Expert sets with more varied puzzle
+architectures based on the successful prototype testing.
+
+Notes / Scratch Pad now supports:
+- keyboard typing (default)
+- optional Apple Pencil/finger drawing
+- per-puzzle persistence
+- clear controls
+
+See VALIDATION.txt for the build notes.
