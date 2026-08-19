@@ -1,0 +1,25 @@
+Beginner: Farmers Market
+Beginner: Pet Parade
+Beginner: School Fair
+Beginner: Garden Club
+Beginner: Movie Night
+Easy: Book Swap
+Easy: Ice Cream Social
+Easy: Talent Showcase
+Easy: Museum Day
+Easy: Camp Challenge
+Medium: Food Truck Rally
+Medium: Science Expo
+Medium: Theater Auditions
+Medium: Town Festival
+Medium: Art Workshop
+Hard: Clockmaker Contest
+Hard: Mountain Lodge
+Hard: Bakery Orders
+Hard: Community Radio
+Hard: River Regatta
+Expert: Research Symposium
+Expert: Lost Manuscripts
+Expert: Film Festival Jury
+Expert: Deep Sea Mission
+Expert: International Design Prize
