@@ -1,13 +1,21 @@
-Deduction Columns — Next Expert Prototype Pair
+Deduction Columns — Hard + Expert Benchmark Test
 
-Two brand-new Expert puzzles only:
+Two brand-new puzzles:
+• Hard — Gallery Opening
+  Different architecture from Harbor Dinner: no seating/timing chain. It uses price gaps,
+  artwork-price relationships, ribbon-price relationships, room/ribbon pairings, and person bridges.
 
-1. Harbor Dinner
-   Architecture: seating order + arrival-time arithmetic + meal/drink/dessert cross-links.
+• Expert — Archive Cipher
+  Different architecture from Expedition Briefing: manuscript/language word properties,
+  shelf/century structure, seal/century structure, restorer/seal relationships, and person bridges.
 
-2. Expedition Briefing
-   Architecture: word-length surname clues + distance ladder + vehicle/distance + weekday/region + badge/distance networks.
+Expert Notes / Scratch Pad:
+• floats while the answer area scrolls
+• draggable
+• resizable
+• collapsible
+• Type and Draw modes retained
+• Hard puzzle keeps the regular in-flow notes section
 
-Both were exhaustively checked from the exact displayed clue constraints and each has exactly one complete solution.
-
-Keyboard-first Notes / Scratch Pad from Version 18 is preserved.
+Both puzzles were exhaustively checked against the exact displayed clues.
+Each has exactly one complete solution.

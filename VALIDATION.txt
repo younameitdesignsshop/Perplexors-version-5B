@@ -1,18 +1,12 @@
-Expert Prototype Pair validation
+Exact clue validation
 
-Harbor Dinner
-Displayed clues: 23
-Complete solutions satisfying exact displayed clues: 1
+Hard — Gallery Opening
+Displayed clues: 18
+Complete solutions satisfying all displayed clues: 1
 
-Expedition Briefing
-Displayed clues: 31
-Complete solutions satisfying exact displayed clues: 1
+Expert — Archive Cipher
+Displayed clues: 30
+Complete solutions satisfying all displayed clues: 1
 
-Validation method:
-Exhaustive enumeration of all assignments under the displayed constraints.
-This does not merely compare clues with the stored answer key.
-
-Design intent:
-- neither puzzle should collapse after one solved network
-- both require separate deduction systems to intersect
-- no long before/after-only architecture
+The validators enumerate assignments under the clue constraints themselves,
+rather than merely comparing the clue text with a stored answer key.
