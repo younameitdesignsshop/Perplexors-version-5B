@@ -1,13 +1,11 @@
-Perplexors Version 19 — FIXED GITHUB PACKAGE
+Deduction Columns — Version 20
 
-25 brand-new puzzles: exactly 5 per level.
-This package was rebuilt from the complete Version 18 GitHub/PWA package.
+25 puzzles total: 5 Beginner, 5 Easy, 5 Medium, 5 Hard, 5 Expert.
 
-Required GitHub Pages/PWA files are included:
-.nojekyll
-icon.svg
-index.html
-manifest.webmanifest
-service-worker.js
+Every displayed clue set was exhaustively solution-count audited before packaging.
+All 25 returned exactly one complete solution.
 
-Build/cache ID: v19-fixed-20260819-1620
+Hard and Expert clue sets use zero direct positive person-to-answer giveaway clues.
+Expert retains the floating, draggable, resizable, collapsible Notes panel.
+
+See AUDIT-V20.txt for the full audit record.

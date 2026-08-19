@@ -1,0 +1,33 @@
+VERSION 20 — EXHAUSTIVE SOLUTION-COUNT AUDIT
+
+Every displayed clue set was evaluated as a constraint system.
+The solver exhaustively enumerated complete one-to-one assignments
+and counted every completion satisfying all displayed clues.
+
+Level | Puzzle | Complete solutions | Clues | Direct positive person clues
+----- | ------ | ------------------ | ----- | ----------------------------
+Beginner | Farmers Market | 1 | 12 | 3
+Beginner | Pet Parade | 1 | 12 | 3
+Beginner | School Fair | 1 | 12 | 3
+Beginner | Garden Club | 1 | 12 | 3
+Beginner | Movie Night | 1 | 12 | 3
+Easy | Book Swap | 1 | 16 | 2
+Easy | Ice Cream Social | 1 | 14 | 2
+Easy | Talent Showcase | 1 | 14 | 2
+Easy | Museum Day | 1 | 14 | 2
+Easy | Camp Challenge | 1 | 14 | 2
+Medium | Food Truck Rally | 1 | 16 | 1
+Medium | Science Expo | 1 | 19 | 1
+Medium | Theater Auditions | 1 | 16 | 1
+Medium | Town Festival | 1 | 16 | 1
+Medium | Art Workshop | 1 | 19 | 1
+Hard | Clockmaker Contest | 1 | 20 | 0
+Hard | Mountain Lodge | 1 | 20 | 0
+Hard | Bakery Orders | 1 | 20 | 0
+Hard | Community Radio | 1 | 20 | 0
+Hard | River Regatta | 1 | 20 | 0
+Expert | Research Symposium | 1 | 23 | 0
+Expert | Lost Manuscripts | 1 | 23 | 0
+Expert | Film Festival Jury | 1 | 22 | 0
+Expert | Deep Sea Mission | 1 | 23 | 0
+Expert | International Design Prize | 1 | 23 | 0
