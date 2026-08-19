@@ -1,12 +1,12 @@
-Exact clue validation
+Version 19 Fixed package validation
 
-Hard — Gallery Opening
-Displayed clues: 18
-Complete solutions satisfying all displayed clues: 1
+Total puzzles: 25
+Beginner: 5
+Easy: 5
+Medium: 5
+Hard: 5
+Expert: 5
 
-Expert — Archive Cipher
-Displayed clues: 30
-Complete solutions satisfying all displayed clues: 1
-
-The validators enumerate assignments under the clue constraints themselves,
-rather than merely comparing the clue text with a stored answer key.
+Required package files: ALL PRESENT
+Unique build marker: v19-fixed-20260819-1620
+Unique service-worker cache: perplexors-v19-fixed-20260819-1620
