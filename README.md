@@ -1,10 +1,13 @@
-Deduction Columns — Version 18
+Deduction Columns — Next Expert Prototype Pair
 
-25 puzzles total: 5 Beginner, 5 Easy, 5 Medium, 5 Hard, 5 Expert.
+Two brand-new Expert puzzles only:
 
-Upper-level calibration:
-- Hard is anchored to Craft Fair Challenge / Festival Week.
-- Expert is anchored to Antique Auction / Inventors' Showcase.
-- Charity Grants was moved to Hard based on play-testing.
-- Apartment Tower and Grand Election were removed from Expert.
-- Keyboard notes remain the default, with optional Apple Pencil drawing.
+1. Harbor Dinner
+   Architecture: seating order + arrival-time arithmetic + meal/drink/dessert cross-links.
+
+2. Expedition Briefing
+   Architecture: word-length surname clues + distance ladder + vehicle/distance + weekday/region + badge/distance networks.
+
+Both were exhaustively checked from the exact displayed clue constraints and each has exactly one complete solution.
+
+Keyboard-first Notes / Scratch Pad from Version 18 is preserved.
