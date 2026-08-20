@@ -1,4 +1,4 @@
-const CACHE='perplexors-v20-20260819-exhaustive-audit';
+const CACHE='five-final-test-20260819-dense-clues';
 const CORE=['./','index.html','manifest.webmanifest','icon.svg'];
 
 self.addEventListener('install',event=>{

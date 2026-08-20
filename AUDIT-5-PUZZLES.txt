@@ -1,0 +1,12 @@
+FIVE-PUZZLE QUALITY TEST — EXHAUSTIVE AUDIT
+
+Every puzzle was exhaustively checked from the literal clue semantics implemented by the validator.
+Each returned exactly one complete solution.
+
+Level | Puzzle | Complete solutions | Architecture
+----- | ------ | ------------------ | ------------
+Hard | Orchestra Auditions | 1 | XOR/either-or + three-way exclusions + experience arithmetic + room/piece bridges
+Expert | Clinical Trial | 1 | Dose arithmetic + exclusive either/or + three-person exclusions + day/clinic/outcome ordering
+Expert | Round Table Mystery | 1 | Circular seating + adjacency/between logic + profession/dinner/gift/ribbon networks
+Expert | Research Grants | 1 | Averages/ratios + two independent numeric systems + city/sponsor bridge logic
+Expert | Publishing Awards | 1 | Word length + publication timing + book/page/genre chain + editor/prize network + XOR bridges

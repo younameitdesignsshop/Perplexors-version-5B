@@ -1,11 +1,12 @@
-Deduction Columns — Version 20
+Deduction Columns — Five-Puzzle FINAL Test
 
-25 puzzles total: 5 Beginner, 5 Easy, 5 Medium, 5 Hard, 5 Expert.
+This is the last-chance quality test:
+• 1 Hard
+• 4 Expert
+• 5 deliberately different reasoning architectures
+• all five have exactly one complete solution by exhaustive constraint audit
 
-Every displayed clue set was exhaustively solution-count audited before packaging.
-All 25 returned exactly one complete solution.
+The numbered clues are intentionally dense compound clues, closer to the design
+philosophy of the workbook examples: fewer clue numbers, but many interacting facts.
 
-Hard and Expert clue sets use zero direct positive person-to-answer giveaway clues.
 Expert retains the floating, draggable, resizable, collapsible Notes panel.
-
-See AUDIT-V20.txt for the full audit record.

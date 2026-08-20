@@ -1,0 +1,19 @@
+FIVE-PUZZLE FINAL TEST — EXHAUSTIVE AUDIT
+
+These five puzzle constraint systems were previously exhaustively enumerated from
+their implemented literal semantics and each returned exactly ONE complete solution.
+
+For this final test, the displayed clues were rewritten into fewer, information-dense
+COMPOUND clues. Each compound clue is exactly the conjunction of the already-validated
+atomic constraints; no constraint was added, removed, or changed.
+
+Level | Puzzle | Complete solutions | Numbered compound clues | Primary architecture
+----- | ------ | ------------------ | ----------------------- | --------------------
+Hard | Orchestra Auditions | 1 | 6 | XOR/either-or + experience arithmetic + room/piece bridges
+Expert | Clinical Trial | 1 | 6 | dose arithmetic + exclusive either/or + weekday/clinic/outcome networks
+Expert | Round Table Mystery | 1 | 6 | circular seating + neighbor/between logic + category networks
+Expert | Research Grants | 1 | 5 | averages/ratios + two independent numeric systems + sponsor/city bridges
+Expert | Publishing Awards | 1 | 6 | word length + page arithmetic + timing + editor/prize + XOR bridges
+
+The point of this test is not clue quantity. It is whether each puzzle produces a
+different kind of thinking and whether the Expert puzzles require sustained scratch work.
