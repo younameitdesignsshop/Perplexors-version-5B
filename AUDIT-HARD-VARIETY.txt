@@ -1,0 +1,7 @@
+HARD VARIETY TEST 2 — EXHAUSTIVE AUDIT
+
+Puzzle | Exact solutions | Architecture | Clues | Constraint families
+------ | --------------- | ------------ | ----- | -------------------
+The Five Testimonies | 1 | false-information / truth-count elimination | 18 | cross-category, exclusion, late bridge, paired person bridge, person exclusion, truth-count
+Wordsmith Prizes | 1 | word properties + page arithmetic + prize network | 18 | arithmetic, cross-category, late bridge, paired person bridge, person bridge, person exclusion, word property
+Research Partners | 1 | non-positional relationship network + grant arithmetic | 19 | arithmetic, cross-category, paired person bridge, person arithmetic, person exclusion
