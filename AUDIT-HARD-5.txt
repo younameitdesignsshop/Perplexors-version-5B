@@ -1,0 +1,9 @@
+HARD-ONLY QUALITY TEST — EXHAUSTIVE LITERAL-SEMANTICS AUDIT
+
+Puzzle | Complete solutions | Primary architecture | Atomic clauses | Displayed clue groups | Constraint families
+------ | ------------------ | -------------------- | -------------- | --------------------- | -------------------
+Gallery Premiere | 1 | dual timeline chains + ticket arithmetic + room bridge | 16 | 8 | adjacency/order, endpoint, late bridge, numeric relation, person inequality, person order
+Trail Relay | 1 | distance ladder + equipment/color packages + person inequalities | 16 | 8 | category link, late bridge, numeric relation, person inequality
+Radio Play Finals | 1 | performance sequence + score-difference network + prop bridge | 16 | 8 | adjacency/order, category link, numeric relation, person inequality
+Market Row | 1 | linear adjacency + parallel product/price/banner chains | 16 | 8 | adjacency/order, category link, numeric relation, person inequality, person order
+Charity Dinner | 1 | table sequence + donation ladder + gift packages | 17 | 9 | adjacency/order, category link, numeric relation, person inequality, person order

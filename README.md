@@ -1,4 +1,7 @@
-Perplexors Version 21
-25 puzzles, 5 per level.
-All 25 complete grids returned exactly one solution in the pre-play enumeration audit.
-See AUDIT-V21.txt.
+Perplexors — Hard-Only Quality Test
+
+Five individually authored Hard puzzles.
+Every puzzle was exhaustively enumerated from the exact constraint semantics used
+to write its displayed clues. All five returned exactly one complete solution.
+
+This is a difficulty/variety calibration test, not a full release.
