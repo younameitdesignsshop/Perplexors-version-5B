@@ -1,0 +1,29 @@
+VERSION 21 — PRE-PLAY AUDIT
+
+Level | Puzzle | Exact solutions | Intended architecture
+----- | ------ | --------------- | ---------------------
+Beginner | Farm Stand | 1 | package matching
+Beginner | Pet Day | 1 | simple exclusions + pairs
+Beginner | Library Helpers | 1 | direct + paired attributes
+Beginner | Garden Sale | 1 | ordered values + pairs
+Beginner | Movie Club | 1 | category packages
+Easy | Book Exchange | 1 | cross-category packages
+Easy | Ice Cream Social | 1 | paired exclusions
+Easy | Talent Night | 1 | order + category links
+Easy | Museum Trip | 1 | paired routes
+Easy | Camp Games | 1 | numeric ladder + pairs
+Medium | Food Truck Finals | 1 | two-network intersection
+Medium | Science Expo | 1 | attribute bridge
+Medium | Theater Auditions | 1 | time ladder + role/song
+Medium | Town Festival | 1 | event/street/time intersection
+Medium | Art Workshop | 1 | tool/medium/table bridge
+Hard | Airport Connections | 1 | route reconstruction + layover arithmetic
+Hard | Mystery Book Club | 1 | word length + month/genre bridges
+Hard | Mountain Rescue | 1 | distance arithmetic + equipment exclusions
+Hard | Art Auction | 1 | bid ratios + item/material packages
+Hard | Neighborhood Gardens | 1 | spatial adjacency + size/color links
+Expert | Museum Heist Timeline | 1 | event reconstruction / physical consequences
+Expert | Election Forecast Error | 1 | false-information / derangement logic
+Expert | Chef Championship | 1 | ratio arithmetic + package construction
+Expert | Island Ferry Puzzle | 1 | circular route + adjacency
+Expert | Codebreakers Conference | 1 | word properties + XOR + numeric sequence
