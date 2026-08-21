@@ -1,9 +1,12 @@
-Perplexors — One Hard Benchmark Test
+Perplexors — Upper-Hard Benchmark
 
-One carefully constructed Hard puzzle only: Antique Appraisal.
+One puzzle only: Innovation Showcase.
 
-Goal:
-5–8 dense clues, good deduction depth, no 1st-to-5th/order backbone,
-and exactly one complete solution.
+Design target:
+- upper end of Hard, below Expert
+- 6 dense clues
+- no first-to-fifth/order backbone
+- overlapping clues that must be cross-referenced
+- exactly one solution
 
 Exhaustive solution-count audit: 1.

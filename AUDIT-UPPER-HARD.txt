@@ -1,0 +1,19 @@
+UPPER-HARD BENCHMARK — EXHAUSTIVE AUDIT
+
+Puzzle: Innovation Showcase
+Displayed clues: 6
+Complete solutions satisfying all displayed clue semantics: 1
+
+Architecture:
+- no chronological / first-to-fifth backbone
+- exhibit-to-budget arithmetic structure
+- sponsor/exhibit either-or package
+- sponsor/feature package
+- person-to-budget inequalities and differences
+- late cross-reference needed to distinguish Light from Sound
+
+Audit method:
+All one-to-one assignments across Exhibit, Sponsor, Budget, and Feature were
+exhaustively tested against the exact executable semantics of the six displayed clues.
+
+Result: EXACTLY 1 complete solution.
