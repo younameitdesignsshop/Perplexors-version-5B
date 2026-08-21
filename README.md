@@ -1,9 +1,9 @@
-Perplexors — Hard Variety Test 2
+Perplexors — One Hard Benchmark Test
 
-Three Hard prototypes deliberately avoiding a 1st-to-5th/order backbone:
-1. The Five Testimonies — false-information/truth-count logic
-2. Wordsmith Prizes — word properties + page arithmetic
-3. Research Partners — non-positional network + grant arithmetic
+One carefully constructed Hard puzzle only: Antique Appraisal.
 
-All three were exhaustively solution-count audited from the exact executable semantics
-used for their displayed clues. Each has exactly one complete solution.
+Goal:
+5–8 dense clues, good deduction depth, no 1st-to-5th/order backbone,
+and exactly one complete solution.
+
+Exhaustive solution-count audit: 1.

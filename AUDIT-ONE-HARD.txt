@@ -1,0 +1,14 @@
+ONE HARD BENCHMARK — EXHAUSTIVE AUDIT
+
+Puzzle: Antique Appraisal
+Displayed clues: 6
+Complete solutions satisfying all displayed clue semantics: 1
+
+Architecture:
+- no order / first-to-fifth backbone
+- artifact-to-value arithmetic chain
+- origin/symbol cross-category packages
+- indirect person/value bridge
+- exclusions used only as cleanup, not as the main engine
+
+The puzzle was exhaustively enumerated over all one-to-one assignments.
