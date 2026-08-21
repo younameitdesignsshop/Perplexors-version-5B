@@ -1,0 +1,9 @@
+HARD LEVEL CANDIDATE SET — AUDIT SUMMARY
+
+Puzzle | Exact solutions | Difficulty target | Primary architecture | Displayed clues | Audit status
+------ | --------------- | ----------------- | -------------------- | --------------- | ------------
+Antique Appraisal | 1 | Lower Hard | value arithmetic + origin/symbol packages | 6 | Previously exhaustively audited
+Gallery Premiere | 1 | Solid Hard | dual timeline chains + ticket arithmetic | 8 | Previously exhaustively audited
+Market Row | 1 | Solid Hard | linear spatial adjacency + parallel chains | 8 | Previously exhaustively audited
+The Five Testimonies | 1 | Solid Hard | false-information / truth-count elimination | 6 | Fresh exhaustive audit after clue compression
+Innovation Showcase | 1 | Upper Hard | overlapping arithmetic + sponsor/feature packages | 6 | Previously exhaustively audited

@@ -1,12 +1,14 @@
-Perplexors — Upper-Hard Benchmark
+Perplexors — Hard Level Candidate Set
 
-One puzzle only: Innovation Showcase.
+Five Hard puzzles chosen from the puzzles that passed play-testing/calibration:
 
-Design target:
-- upper end of Hard, below Expert
-- 6 dense clues
-- no first-to-fifth/order backbone
-- overlapping clues that must be cross-referenced
-- exactly one solution
+1. Antique Appraisal — lower Hard
+2. Gallery Premiere — solid Hard
+3. Market Row — solid Hard
+4. The Five Testimonies — solid Hard, false-information structure
+5. Innovation Showcase — upper Hard
 
-Exhaustive solution-count audit: 1.
+The Five Testimonies was rewritten from many small clues into 6 dense clues and
+then exhaustively re-audited: exactly one solution.
+
+This set is intended to be frozen if the compressed Five Testimonies still feels right.
