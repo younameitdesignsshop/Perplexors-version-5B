@@ -1,1 +1,5 @@
-Three Expert calibration prototypes, six dense clues each. V21 floating Expert notes retained. Each puzzle exhaustively enumerated to exactly one complete solution.
+NEW EXPERT ARCHITECTURE TEST
+
+Color Echo — repeated color set across categories.
+The Final Five — finishing positions are the columns.
+Number Circuit — same numerical set reused across four categories with cross-category arithmetic.
