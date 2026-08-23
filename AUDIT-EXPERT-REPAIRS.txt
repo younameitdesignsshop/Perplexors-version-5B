@@ -1,0 +1,10 @@
+EXPERT REPAIRS — LITERAL CLUE AUDIT
+
+Puzzle | Exact complete solutions | Displayed clues | Architecture
+------ | ------------------------ | --------------- | ------------
+The Final Five — Repaired | 1 | 7 | position columns + identity reconstruction
+Number Circuit — Rebuilt | 1 | 7 | reused number set + cross-category arithmetic
+
+Both audits enumerate the literal semantics of the player-facing clues.
+The Final Five keeps its positional-column architecture and difficulty; Score was renamed/reframed as project Budget so the story does not imply finish order.
+Number Circuit keeps the repeated-number/cross-category arithmetic architecture but uses a corrected internally consistent solution grid.

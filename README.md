@@ -1,5 +1,5 @@
-NEW EXPERT ARCHITECTURE TEST
+Two repaired Expert puzzles only:
+- The Final Five — Repaired
+- Number Circuit — Rebuilt
 
-Color Echo — repeated color set across categories.
-The Final Five — finishing positions are the columns.
-Number Circuit — same numerical set reused across four categories with cross-category arithmetic.
+Both have exactly one solution by exhaustive literal-clue enumeration.
