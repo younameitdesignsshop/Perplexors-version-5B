@@ -1,0 +1,10 @@
+EXPERT BATCH 3 — EXHAUSTIVE LITERAL-CLUE AUDIT
+
+Puzzle | Exact solutions | Clues | Architecture | Solutions if each clue removed
+------ | --------------- | ----- | ------------ | ------------------------------
+False Ledger | 1 | 7 | truth-count + paired possibilities | C1:4, C2:2, C3:18, C4:2, C5:30, C6:6, C7:2
+Courier Loop | 1 | 6 | directed route network + mileage packages | C1:12, C2:20, C3:10, C4:6, C5:2, C6:6
+
+Every displayed clue was tested literally.
+Each puzzle has exactly one complete solution.
+Every clue is necessary: removing any single displayed clue leaves multiple complete solutions.
