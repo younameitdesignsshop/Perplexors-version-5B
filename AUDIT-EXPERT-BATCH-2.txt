@@ -1,0 +1,6 @@
+EXPERT BATCH 2 — EXHAUSTIVE LITERAL-CLUE AUDIT
+
+Double Jump | exact complete solutions: 1 | clues: 6 | two-category repeated set + derived totals
+Three True  | exact complete solutions: 1 | clues: 6 | truth-count + event reconstruction
+
+Only puzzles that passed the literal displayed-clue uniqueness audit are included.
