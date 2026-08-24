@@ -1,4 +1,1 @@
-Two new Expert prototypes aimed at Final Five-level depth with different architectures.
-False Ledger: truth-count + paired possibilities.
-Courier Loop: directed route network + mileage/package reconstruction.
-Both have exactly one solution, and every displayed clue is necessary.
+Three new Expert prototypes: Archive Relay, Elevator Swap, Measure Twice. Exactly one literal solution each; every clue necessary.

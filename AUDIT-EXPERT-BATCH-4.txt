@@ -1,0 +1,10 @@
+EXPERT BATCH 4 — STRICT LITERAL-CLUE AUDIT
+
+Puzzle | Exact solutions | Clues | Architecture | Solutions if each clue removed
+------ | --------------- | ----- | ------------ | ------------------------------
+Archive Relay | 1 | 7 | position columns + split identity + dating | C1:48, C2:28, C3:5, C4:18, C5:50, C6:50, C7:50
+Elevator Swap | 1 | 6 | two-state physical movement reconstruction | C1:12, C2:16, C3:36, C4:36, C5:12, C6:2
+Measure Twice | 1 | 5 | reused numeric sets + intersecting equations | C1:12, C2:18, C3:24, C4:2, C5:2
+
+All three displayed clue sets have exactly one complete solution.
+Every displayed clue is necessary; removing any one leaves multiple solutions.
