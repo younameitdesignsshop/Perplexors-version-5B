@@ -1,0 +1,8 @@
+EXPERT BATCH 6 — LITERAL SOLUTION AUDIT
+
+Launch Window | exact solutions: 1 | removal counts: [50, 6, 2, 6, 12, 6, 6]
+Manuscript Maze | exact solutions: 1 | removal counts: [30, 2, 2, 4, 2, 2, 4]
+Color Triad | exact solutions: 1 | removal counts: [8, 20, 6, 8, 10]
+
+All three have exactly one complete solution. Every displayed clue is necessary: removing any one clue leaves multiple solutions.
+Difficulty and branch-free flow remain subject to human play-testing.

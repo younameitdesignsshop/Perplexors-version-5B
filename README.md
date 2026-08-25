@@ -1,10 +1,4 @@
-Expert Batch 5
-
-Festival Ledger — ordinal finishing-position columns; identity reconstruction.
-Harbor Exchange — person columns; route-network reconstruction.
-Calibration Bench — dense numerical cross-category relationships.
-
-This batch intentionally uses deduction engines that previously survived play-testing:
-Archive Relay, Courier Loop, and Measure Twice. The goal is to preserve branch-free
-Expert reasoning while changing presentation/theme rather than introduce another
-untested 'unique but guessy' architecture.
+Perplexors Version 21
+25 puzzles, 5 per level.
+All 25 complete grids returned exactly one solution in the pre-play enumeration audit.
+See AUDIT-V21.txt.
