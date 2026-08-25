@@ -1,0 +1,18 @@
+EXPERT BATCH 5 — DESIGN AUDIT
+
+Festival Ledger
+Structural engine: Archive Relay (play-tested successfully)
+Change: ordinal finishing-position columns + new theme/labels
+
+Harbor Exchange
+Structural engine: Courier Loop (play-tested as a top Expert benchmark)
+Change: new ports/theme/labels
+
+Calibration Bench
+Structural engine: Measure Twice (play-tested successfully)
+Change: new measurement theme/labels
+
+Reason for this batch strategy:
+The previous Elevator Swap showed that uniqueness alone does not guarantee a proper
+Perplexors-style solve. These three preserve deduction structures already shown in
+human play-testing to progress without trial-and-error branching.
