@@ -1,1 +1,1 @@
-Expert Batch 7: Signal Intercept, Gallery Exchange, Night Shift.
+Expert Batch 7 Revised: Signal Intercept — Repaired, Gallery Exchange — Harder, Night Shift — Repaired.

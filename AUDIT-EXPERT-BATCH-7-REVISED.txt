@@ -1,0 +1,3 @@
+Gallery Exchange — Harder: exact complete solutions = 1
+Solutions after removing each displayed clue: [14, 8, 8, 8, 4, 2, 8]
+All seven displayed clues are necessary.
