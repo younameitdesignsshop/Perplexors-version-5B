@@ -1,1 +1,1 @@
-Expert Batch 7 Revised: Signal Intercept — Repaired, Gallery Exchange — Harder, Night Shift — Repaired.
+Signal Intercept — Expert Repair. Single-puzzle test build.
