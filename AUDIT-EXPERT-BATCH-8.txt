@@ -1,0 +1,8 @@
+EXPERT BATCH 8 — STRICT LITERAL AUDIT
+
+Evidence Board: exact complete solutions = 1; solutions after removing each clue = [50, 6, 2, 6, 12, 6, 6]
+Conservation Grants: exact complete solutions = 1; solutions after removing each clue = [14, 6, 12, 4, 6, 2, 8]
+Council Ring: exact complete solutions = 1; solutions after removing each clue = [30, 4, 8, 6, 20]
+
+All three literal player-facing clue sets have exactly one solution.
+Human play-testing remains the final test for Expert difficulty and branch-free flow.
