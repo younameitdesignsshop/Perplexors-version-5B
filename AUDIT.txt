@@ -1,1 +1,16 @@
-Repair preserves the previously verified unique spacing relationship: Photo -> two log positions -> Map -> two log positions -> Cipher. Exact complete solution: 1.
+Expert Batch 9 — Repaired
+
+Archive Transfer — Repaired
+- Exact solution count after repair: 1
+- Original solution preserved.
+- Repair uses indirect ordering/adjacency clues rather than exact placements.
+
+Observatory Blocks — Repaired
+- Exact solution count after repair: 1
+- Original solution preserved.
+- Repair connects otherwise separate systems through block position.
+
+Five Gates — Repaired
+- Exact solution count: 1
+- Original solution preserved.
+- Replaced the simple full chains with interlocking spacing and cross-category constraints.
