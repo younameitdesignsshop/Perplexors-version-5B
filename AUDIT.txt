@@ -1,7 +1,7 @@
-Batch 10 Repaired
+Expert 11 validation
 
-Restoration Queue — Repaired: exact solution count = 1.
-Dispatch Board: unchanged; retained as the successful Expert puzzle from the original batch.
-Patent Review — Repaired: exact solution count = 1.
+Exhibit Corridor: exact solution count = 1; no-branch propagation = PASS; propagation rounds = 6; resolved = 25/25
+Lantern Council: exact solution count = 1; no-branch propagation = PASS; propagation rounds = 5; resolved = 20/20
+Case Review: exact solution count = 1; no-branch propagation = PASS; propagation rounds = 5; resolved = 25/25
 
-Repairs use relative/relational clues rather than exact placements.
+No hypothetical branch was used in the propagation solve.
