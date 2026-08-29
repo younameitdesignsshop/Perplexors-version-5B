@@ -387,6 +387,31 @@ body{background:linear-gradient(145deg,#c8f4ff,#fff1c9 48%,#f9d9ff)!important}
 #notesResizeGrip{display:none;position:absolute;right:7px;bottom:5px;z-index:5;width:34px;height:34px;line-height:34px;text-align:center;font-size:24px;font-weight:700;color:#766b60;background:#f5eee4;border:1px solid #cfc4b5;border-radius:9px;touch-action:none;user-select:none;-webkit-user-select:none}
 .notes-wrap.expert-floating #notesResizeGrip{display:block;cursor:nwse-resize}
 .notes-wrap.expert-floating.minimized #notesResizeGrip{display:none}
+
+.notes-wrap.expert-floating.minimized{
+  width:auto!important;
+  height:auto!important;
+  min-width:0!important;
+  min-height:0!important;
+  max-height:none!important;
+  resize:none!important;
+  overflow:hidden!important;
+  padding:6px 8px!important;
+}
+.notes-wrap.expert-floating.minimized #typeNotesPanel,
+.notes-wrap.expert-floating.minimized #drawNotesPanel,
+.notes-wrap.expert-floating.minimized .notes-help,
+.notes-wrap.expert-floating.minimized #notesResizeGrip{
+  display:none!important;
+}
+.notes-wrap.expert-floating.minimized .notes-top{
+  margin:0!important;
+  padding:0!important;
+  position:static!important;
+}
+.notes-wrap.expert-floating.minimized .notes-tabs{
+  gap:4px!important;
+}
 </style></head><body><div class="app"><div class="sheet">
 <section id="home"><div class="hero"><h1>Deduction Columns</h1><div>Version 21 · 1 Hard + 4 Expert</div></div><div class="levels" id="levels"></div></section>
 <section id="game" class="hidden"><div class="game-head"><button id="homeBtn" class="btn">← Home</button><div class="game-title-wrap"><span id="themeBadge" class="theme-badge"></span><small id="levelLabel"></small><h2 id="titleLabel" style="margin:0"></h2></div><select id="puzzleSelect" class="btn"></select></div><div class="progress-panel"><div class="progress-label"><span> puzzle progress</span><strong id="progressPercent">0%</strong></div><div class="progress-track"><div id="progressFill" class="progress-fill"></div></div></div><div class="game-grid"><aside><h3>The Story</h3><p id="storyText" class="story"></p><h3>The Clues</h3><ol id="cluesList" class="clues"></ol></aside><main><div class="tools"><span>Apple Pencil mode:</span><button id="circleMode" class="mode active circle">Circle</button><button id="crossMode" class="mode">Strike Through</button><button id="eraseMode" class="mode">Erase</button></div><div id="board" class="board"></div>
@@ -562,7 +587,16 @@ $('notesResizeGrip')?.addEventListener('pointerup',()=>noteResize=null);
 $('notesResizeGrip')?.addEventListener('pointercancel',()=>noteResize=null);
 $('notesMinimize').addEventListener('click',()=>{
   const nw=document.querySelector('.notes-wrap');
+  const minimizing=!nw.classList.contains('minimized');
+  if(minimizing){
+    nw.dataset.preMinWidth=nw.style.width||'';
+    nw.dataset.preMinHeight=nw.style.height||'';
+  }
   nw.classList.toggle('minimized');
+  if(!minimizing){
+    nw.style.width=nw.dataset.preMinWidth||nw.style.width;
+    nw.style.height=nw.dataset.preMinHeight||nw.style.height;
+  }
   $('notesMinimize').textContent=nw.classList.contains('minimized')?'📝':'—';
 });
 let notesDragging=false, notesDX=0, notesDY=0;
