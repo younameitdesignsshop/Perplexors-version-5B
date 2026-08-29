@@ -382,6 +382,11 @@ body{background:linear-gradient(145deg,#c8f4ff,#fff1c9 48%,#f9d9ff)!important}
   .notes-wrap.expert-floating{width:min(94vw,460px);height:min(62vh,620px);max-height:84vh}
   .notes-wrap.expert-floating #typedNotes{min-height:240px}
 }
+
+.notes-wrap.expert-floating{min-width:320px;min-height:260px}
+#notesResizeGrip{display:none;position:absolute;right:7px;bottom:5px;z-index:5;width:34px;height:34px;line-height:34px;text-align:center;font-size:24px;font-weight:700;color:#766b60;background:#f5eee4;border:1px solid #cfc4b5;border-radius:9px;touch-action:none;user-select:none;-webkit-user-select:none}
+.notes-wrap.expert-floating #notesResizeGrip{display:block;cursor:nwse-resize}
+.notes-wrap.expert-floating.minimized #notesResizeGrip{display:none}
 </style></head><body><div class="app"><div class="sheet">
 <section id="home"><div class="hero"><h1>Deduction Columns</h1><div>Version 21 · 1 Hard + 4 Expert</div></div><div class="levels" id="levels"></div></section>
 <section id="game" class="hidden"><div class="game-head"><button id="homeBtn" class="btn">← Home</button><div class="game-title-wrap"><span id="themeBadge" class="theme-badge"></span><small id="levelLabel"></small><h2 id="titleLabel" style="margin:0"></h2></div><select id="puzzleSelect" class="btn"></select></div><div class="progress-panel"><div class="progress-label"><span> puzzle progress</span><strong id="progressPercent">0%</strong></div><div class="progress-track"><div id="progressFill" class="progress-fill"></div></div></div><div class="game-grid"><aside><h3>The Story</h3><p id="storyText" class="story"></p><h3>The Clues</h3><ol id="cluesList" class="clues"></ol></aside><main><div class="tools"><span>Apple Pencil mode:</span><button id="circleMode" class="mode active circle">Circle</button><button id="crossMode" class="mode">Strike Through</button><button id="eraseMode" class="mode">Erase</button></div><div id="board" class="board"></div>
@@ -391,12 +396,12 @@ body{background:linear-gradient(145deg,#c8f4ff,#fff1c9 48%,#f9d9ff)!important}
     <div class="notes-tabs">
       <button id="notesTypeTab" class="btn notes-tab active">⌨️ Type</button>
       <button id="notesDrawTab" class="btn notes-tab">✏️ Draw</button>
-      <button id="notesClearAll" class="btn">Clear Notes</button><button id="notesMinimize" class="btn" title="Minimize notes">—</button>
+      <button id="notesClearAll" class="btn">Clear Notes</button><button id="notesSmaller" class="btn">− Size</button><button id="notesLarger" class="btn">+ Size</button><button id="notesFull" class="btn">↗ Expand</button><button id="notesMinimize" class="btn" title="Minimize notes">—</button>
     </div>
   </div>
   <div id="typeNotesPanel">
     <textarea id="typedNotes" placeholder="Type relationships, sequences, possibilities, or anything you want to remember…"></textarea>
-    <div class="notes-help">Typed notes are saved automatically for this puzzle.</div>
+    <div class="notes-help">Typed notes are saved automatically. Use + Size / − Size, Expand, or drag the ↘ corner to resize.</div>
   </div>
   <div id="drawNotesPanel" class="hidden-note">
     <div class="draw-tools">
@@ -521,6 +526,39 @@ $('scratchCanvas').addEventListener('pointerup',noteEnd);
 $('scratchCanvas').addEventListener('pointercancel',noteEnd);
 window.addEventListener('resize',()=>{if(current&&noteTab==='draw')setTimeout(noteCanvasSetup,80)});
 
+
+function notesWrapEl(){return document.querySelector('.notes-wrap')}
+function setNotesSize(w,h){
+ const nw=notesWrapEl(); if(!nw)return;
+ nw.style.width=Math.max(320,Math.min(window.innerWidth-24,w))+'px';
+ nw.style.height=Math.max(260,Math.min(window.innerHeight-24,h))+'px';
+ nw.style.maxHeight='none';
+}
+$('notesLarger').addEventListener('click',()=>{const r=notesWrapEl().getBoundingClientRect();setNotesSize(r.width+80,r.height+100)});
+$('notesSmaller').addEventListener('click',()=>{const r=notesWrapEl().getBoundingClientRect();setNotesSize(r.width-80,r.height-100)});
+$('notesFull').addEventListener('click',()=>{
+ const nw=notesWrapEl();
+ if(nw.dataset.full==='1'){
+   nw.dataset.full='0'; setNotesSize(460,Math.min(620,window.innerHeight*.58));
+   nw.style.right='18px';nw.style.bottom='18px';nw.style.left='auto';nw.style.top='auto';
+   $('notesFull').textContent='↗ Expand';
+ }else{
+   nw.dataset.full='1'; nw.style.left='12px';nw.style.top='12px';nw.style.right='auto';nw.style.bottom='auto';
+   setNotesSize(window.innerWidth-24,window.innerHeight-24); $('notesFull').textContent='↙ Restore';
+ }
+});
+let noteResize=null;
+$('notesResizeGrip').addEventListener('pointerdown',e=>{
+ const r=notesWrapEl().getBoundingClientRect();
+ noteResize={x:e.clientX,y:e.clientY,w:r.width,h:r.height};
+ e.currentTarget.setPointerCapture?.(e.pointerId); e.preventDefault();
+});
+$('notesResizeGrip').addEventListener('pointermove',e=>{
+ if(!noteResize)return;
+ setNotesSize(noteResize.w+(e.clientX-noteResize.x),noteResize.h+(e.clientY-noteResize.y)); e.preventDefault();
+});
+$('notesResizeGrip').addEventListener('pointerup',()=>noteResize=null);
+$('notesResizeGrip').addEventListener('pointercancel',()=>noteResize=null);
 $('notesMinimize').addEventListener('click',()=>{
   const nw=document.querySelector('.notes-wrap');
   nw.classList.toggle('minimized');

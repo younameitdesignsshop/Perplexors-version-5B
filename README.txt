@@ -1,12 +1,7 @@
 Expert 10
 
-Remaining puzzles:
-- Restoration Queue — Repaired
-- Patent Review — Repaired
-
-Notes update:
-- Larger default typing area
-- Floating notes panel is taller and wider
-- Notes panel remains resizable
-- Typing area itself can be resized
-- More notes remain visible at once
+Notes controls:
+- + Size
+- − Size
+- Expand / Restore
+- Drag the ↘ lower-right corner for custom sizing
