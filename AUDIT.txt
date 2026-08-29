@@ -1,16 +1,7 @@
-Expert Batch 9 — Repaired
+Batch 10 Repaired
 
-Archive Transfer — Repaired
-- Exact solution count after repair: 1
-- Original solution preserved.
-- Repair uses indirect ordering/adjacency clues rather than exact placements.
+Restoration Queue — Repaired: exact solution count = 1.
+Dispatch Board: unchanged; retained as the successful Expert puzzle from the original batch.
+Patent Review — Repaired: exact solution count = 1.
 
-Observatory Blocks — Repaired
-- Exact solution count after repair: 1
-- Original solution preserved.
-- Repair connects otherwise separate systems through block position.
-
-Five Gates — Repaired
-- Exact solution count: 1
-- Original solution preserved.
-- Replaced the simple full chains with interlocking spacing and cross-category constraints.
+Repairs use relative/relational clues rather than exact placements.
