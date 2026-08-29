@@ -412,6 +412,7 @@ body{background:linear-gradient(145deg,#c8f4ff,#fff1c9 48%,#f9d9ff)!important}
     <canvas id="scratchCanvas"></canvas>
     <div class="notes-help">Apple Pencil/finger drawing is optional. This area blocks page text selection while you draw.</div>
   </div>
+  <div id="notesResizeGrip" title="Drag to resize notes">↘</div>
 </div>
 <div class="actions"><button id="progressBtn" class="btn">Check My Progress</button><button id="checkBtn" class="btn primary">Check Answer</button><button id="hintBtn" class="btn">Hint</button><button id="resetBtn" class="btn">Reset</button></div><div id="notice" class="notice hidden"></div></main></div></section>
 </div></div><div id="introCard" class="hidden"><div class="intro-box"><div id="introIcon" class="intro-icon"></div><div id="introLevel" class="intro-level"></div><div id="introTitle" class="intro-title"></div><div>Use logic. Circle the match. Cross out the impossible.</div><button id="introGo" class="intro-go">Start Puzzle</button></div></div><div id="celebrate" class="hidden"><div id="confettiLayer"></div><div class="win-card"><div class="big">🎉</div><h2>Puzzle Solved!</h2><p id="winText"></p><button id="winContinue">Continue</button></div></div><script>
@@ -548,17 +549,17 @@ $('notesFull').addEventListener('click',()=>{
  }
 });
 let noteResize=null;
-$('notesResizeGrip').addEventListener('pointerdown',e=>{
+$('notesResizeGrip')?.addEventListener('pointerdown',e=>{
  const r=notesWrapEl().getBoundingClientRect();
  noteResize={x:e.clientX,y:e.clientY,w:r.width,h:r.height};
  e.currentTarget.setPointerCapture?.(e.pointerId); e.preventDefault();
 });
-$('notesResizeGrip').addEventListener('pointermove',e=>{
+$('notesResizeGrip')?.addEventListener('pointermove',e=>{
  if(!noteResize)return;
  setNotesSize(noteResize.w+(e.clientX-noteResize.x),noteResize.h+(e.clientY-noteResize.y)); e.preventDefault();
 });
-$('notesResizeGrip').addEventListener('pointerup',()=>noteResize=null);
-$('notesResizeGrip').addEventListener('pointercancel',()=>noteResize=null);
+$('notesResizeGrip')?.addEventListener('pointerup',()=>noteResize=null);
+$('notesResizeGrip')?.addEventListener('pointercancel',()=>noteResize=null);
 $('notesMinimize').addEventListener('click',()=>{
   const nw=document.querySelector('.notes-wrap');
   nw.classList.toggle('minimized');
