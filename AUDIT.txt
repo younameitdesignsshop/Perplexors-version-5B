@@ -1,7 +1,6 @@
-Expert 11 validation
+Exact solution audit:
+Wildlife Honors: 1
+Conservation Grants II: 1
+Summit Supply: 1
 
-Exhibit Corridor: exact solution count = 1; no-branch propagation = PASS; propagation rounds = 6; resolved = 25/25
-Lantern Council: exact solution count = 1; no-branch propagation = PASS; propagation rounds = 5; resolved = 20/20
-Case Review: exact solution count = 1; no-branch propagation = PASS; propagation rounds = 5; resolved = 25/25
-
-No hypothetical branch was used in the propagation solve.
+Each count was independently brute-force checked before packaging.

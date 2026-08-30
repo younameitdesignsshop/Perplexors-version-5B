@@ -1,10 +1,4 @@
-Expert 11
+Expert 12
 
-1. Exhibit Corridor — overlapping spatial-interval logic
-2. Lantern Council — circular clockwise logic
-3. Case Review — paired one/other logic
-
-Notes controls included:
-- + Size / − Size
-- Expand / Restore
-- draggable ↘ corner
+Workbook-inspired mixed deduction architectures.
+Notes: expandable large panel + tiny minimized state.
