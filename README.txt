@@ -1,4 +1,7 @@
-Expert 12
+Expert 13
 
-Workbook-inspired mixed deduction architectures.
-Notes: expandable large panel + tiny minimized state.
+1. Culinary Finals
+2. Faulty Manifest
+3. Mountain Registry
+
+Open index.html in Safari or host the folder on GitHub Pages.

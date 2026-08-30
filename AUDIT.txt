@@ -1,6 +1,11 @@
-Exact solution audit:
-Wildlife Honors: 1
-Conservation Grants II: 1
-Summit Supply: 1
+EXPERT 13 VALIDATION
 
-Each count was independently brute-force checked before packaging.
+Culinary Finals: exact solution count = 1
+Faulty Manifest: exact solution count = 1
+Mountain Registry: exact solution count = 1
+
+Design goals:
+- mixed deduction mechanisms rather than one repeated clue type
+- no solution handed over by a single final sequence clue
+- three distinct architectures: numeric/interlocking, false-information, position+identity+quantity
+- Expert Notes panel preserved exactly from Expert 12
