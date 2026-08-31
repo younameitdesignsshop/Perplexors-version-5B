@@ -1,11 +1,12 @@
-EXPERT 13 VALIDATION
+EXPERT 14 VALIDATION
 
-Culinary Finals: exact solution count = 1
-Faulty Manifest: exact solution count = 1
-Mountain Registry: exact solution count = 1
+Scholarship Board: exact solution count = 1
+The Misfiled Cards: exact solution count = 1
+Broadcast Relay: exact solution count = 1
 
-Design goals:
-- mixed deduction mechanisms rather than one repeated clue type
-- no solution handed over by a single final sequence clue
-- three distinct architectures: numeric/interlocking, false-information, position+identity+quantity
-- Expert Notes panel preserved exactly from Expert 12
+Architecture checks:
+- Scholarship Board: interlocking quantity ladders across four independent category systems.
+- The Misfiled Cards: special circular mislabel rule plus ordinary exhibit logic; not a Faulty Manifest reskin.
+- Broadcast Relay: editing order and clock time are separate systems, with paired category packages and limited position clues.
+- No puzzle relies on one final clue that simply states the remaining sequence.
+- Expert Notes panel preserved unchanged.

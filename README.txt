@@ -1,7 +1,7 @@
-Expert 13
+Expert 14 — Final Expert Calibration
 
-1. Culinary Finals
-2. Faulty Manifest
-3. Mountain Registry
+1. Scholarship Board
+2. The Misfiled Cards
+3. Broadcast Relay
 
-Open index.html in Safari or host the folder on GitHub Pages.
+The approved Notes panel is preserved unchanged from Expert 13.
