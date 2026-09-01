@@ -1,0 +1,8 @@
+PRODUCTION RULES
+- Exact uniqueness mandatory.
+- No trial-and-error/branching as the intended solve path.
+- Expert depth must match proven Expert benchmarks.
+- Rotate deduction architectures.
+- Rotate BOTH first names and surnames aggressively.
+- Avoid repeated casts across puzzles.
+- Preserve the approved Notes panel.

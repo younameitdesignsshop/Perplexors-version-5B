@@ -1,7 +1,8 @@
-Expert 14 — Final Expert Calibration
+Production Library 1 — Expert Foundation
 
-1. Scholarship Board
-2. The Misfiled Cards
-3. Broadcast Relay
+This is production content, not another calibration batch.
 
-The approved Notes panel is preserved unchanged from Expert 13.
+8 proven Expert keepers are included, with completely refreshed casts.
+No first name repeats anywhere in this library, and no surname repeats.
+
+The approved floating Notes panel is preserved unchanged.
