@@ -1,30 +1,18 @@
-Version 18 build QA
+VALIDATION NOTES
 
-Counts:
-Beginner 5
-Easy 5
-Medium 5
-Hard 5
-Expert 5
+Each puzzle uses a previously exact-unique Expert architecture whose logical structure was retained under a bijective transformation of names/category values.
 
-Hard:
-Craft Fair Challenge — retained benchmark
-Festival Week — retained benchmark/minimum Hard floor
-Bake-Off Numbers — strengthened
-Dinner Theater — strengthened
-Charity Grants — moved from Expert to Hard based on play-test feedback
+Expedition Checkpoint:
+- Based on the proven Summit Supply architecture.
+- Original exact solution count: 1.
 
-Expert:
-Antique Auction — retained benchmark
-Inventors' Showcase — retained benchmark
-Forensics Lab — new
-Observatory Night — new
-City Innovation Finals — new large feature puzzle
+Museum Signal Log:
+- Based on the repaired Signal Intercept architecture.
+- The indirect repair clue that removed the original ambiguity is retained structurally.
+- Repaired architecture exact solution count: 1.
 
-Build QA performed:
-- 25 puzzles present, exactly 5 per level
-- every stored solution uses every category exactly once
-- every stored solution value exists in its displayed choice list
-- Version 17 keyboard + optional drawing Notes feature preserved
+Emergency Dispatch Board:
+- Based on the previously audited Dispatch Board architecture.
+- Its category-permutation constraint propagation reached singleton domains without branching.
 
-Human play-testing remains the difficulty check; uniqueness alone is not treated as difficulty.
+All literal solution tables were additionally checked for one-use consistency.

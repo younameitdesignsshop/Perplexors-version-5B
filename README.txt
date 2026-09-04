@@ -1,8 +1,18 @@
-Production Library 1 — Expert Foundation
+EXPERT PRODUCTION EXPANSION 2
 
-This is production content, not another calibration batch.
+Three fresh production puzzles:
+1. Expedition Checkpoint
+2. Museum Signal Log
+3. Emergency Dispatch Board
 
-8 proven Expert keepers are included, with completely refreshed casts.
-No first name repeats anywhere in this library, and no surname repeats.
+This is production-library construction, not a calibration batch.
 
-The approved floating Notes panel is preserved unchanged.
+Naming rule:
+- All first names in this expansion are different.
+- All surnames in this expansion are different.
+- These casts do not reuse the familiar names from the calibration batches.
+
+Construction rule:
+- Built from three previously proven Expert deduction architectures.
+- Surface categories, values, casts, and answer structures were refreshed.
+- The approved Notes panel is preserved.
