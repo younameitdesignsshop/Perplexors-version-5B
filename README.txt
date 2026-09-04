@@ -1,18 +1,19 @@
-EXPERT PRODUCTION EXPANSION 2
+EXPERT PRODUCTION LIBRARY — 11 PUZZLES
 
-Three fresh production puzzles:
-1. Expedition Checkpoint
-2. Museum Signal Log
-3. Emergency Dispatch Board
+This package merges the original 8 production keepers with the 3 new production additions.
 
-This is production-library construction, not a calibration batch.
+Included:
+1. Evidence Board
+2. Conservation Grants
+3. Archive Transfer
+4. Observatory Blocks
+5. Patent Review
+6. Mountain Registry
+7. Faulty Manifest
+8. Broadcast Relay
+9. Expedition Checkpoint
+10. Museum Signal Log
+11. Emergency Dispatch Board
 
-Naming rule:
-- All first names in this expansion are different.
-- All surnames in this expansion are different.
-- These casts do not reuse the familiar names from the calibration batches.
-
-Construction rule:
-- Built from three previously proven Expert deduction architectures.
-- Surface categories, values, casts, and answer structures were refreshed.
-- The approved Notes panel is preserved.
+The approved Notes panel is preserved.
+Future production downloads should be cumulative rather than separate mini-batches.
